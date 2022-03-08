@@ -298,6 +298,8 @@ input[type='reset'] {
 
 .hero {
   padding: 1rem 1.6rem;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .intro__title p {
@@ -315,9 +317,9 @@ input[type='reset'] {
   line-height: 2rem;
   color: var(--clr-red);
   font-family: var(--ff-ubuntu);
-  background-image: url(images/red-image.jpeg);
+  background-image: url(images/Ngaruroro.svg);
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
