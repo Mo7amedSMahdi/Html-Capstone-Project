@@ -283,6 +283,10 @@ input[type='reset'] {
   content: url(../images/icons/icn-menu.svg);
 }
 
+.icon-close {
+  content: url(../images/icons/icn-close.svg);
+}
+
 .icon-lecture {
   content: url(../images/icons/icn-lecture.svg);
 }
@@ -307,6 +311,10 @@ input[type='reset'] {
   content: url(../images/icons/network-monitoring.svg);
 }
 
+.no--scroll {
+  overflow: hidden;
+}
+
 /* Header Section */
 
 .header__nav {
@@ -323,6 +331,10 @@ input[type='reset'] {
   height: 16px;
 }
 
+nav a[data-target='brandLogo'] {
+  display: none;
+}
+
 .button-group {
   justify-content: center;
   align-items: center;
@@ -335,7 +347,7 @@ input[type='reset'] {
 }
 
 .nav__main {
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -350,8 +362,43 @@ input[type='reset'] {
   width: 100px;
 }
 
+nav a[data-target='brandLogo'] {
+  display: none;
+}
+
+.nav--mobile {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 4rem;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.nav--mobile li:first-child {
+  margin-top: 70%;
+}
+
+.nav--mobile a {
+  font-size: 1.7rem;
+}
+
 .active {
   color: var(--clr-red);
+}
+
+.close {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 99999;
 }
 
 /* Partners Section */
@@ -411,4 +458,32 @@ input[type='reset'] {
   font-family: var(--ff-lato);
   line-height: 1.25rem;
   color: var(--clr-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__main {
+    padding: 1rem 4rem;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .btn[data-target='mobileMenu'] {
+    display: none;
+  }
+
+  .nav--mobile {
+    display: none;
+  }
+
+  nav a[data-target='brandLogo'] {
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav__main {
+    padding: 1rem 6rem;
+  }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CC Globale Summit 2015 | About</title>
+    <title>IT.LIVE iraq 2019 | About</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about.css" />
 </head>
@@ -22,13 +22,20 @@
             </div>
         </div>
         <nav class="nav__main flex">
-            <a href="index.html"><img class="brand__logo" src="images/brands/it_live.png"
-                    alt="cc global summit 2015 logo">
+            <button id="btnClose" type="button" class="btn btn-icon close hidden" data-target="mobileMenuClose"><i
+                    class="icon-close"></i></button>
+            <ul id="mobileNav" class="nav--mobile hidden">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+            </ul>
+            <a class="nav__brand--link" href="index.html" data-target="brandLogo"><img class="brand__logo"
+                    src="images/brands/it_live.png" alt="cc global summit 2015 logo">
             </a>
-            <button type="button" class="btn btn-icon" data-target="mobileMenu"><i class="icon-menu"></i></button>
+            <button id="btnMenu" type="button" class="btn btn-icon" data-target="mobileMenu"><i
+                    class="icon-menu"></i></button>
             <ul class="nav-menu">
-                <li><a href="">Home</a></li>
-                <li class="active"><a href="">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -110,6 +117,8 @@
             <p>2019 The largest Iraqi forum for information technology in all its disciplines.</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 

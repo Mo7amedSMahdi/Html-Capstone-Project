@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT.LIVE iraq | 2019</title>
+    <title>IT.LIVE iraq 2019</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -22,14 +22,20 @@
             </div>
         </div>
         <nav class="nav__main flex">
-            <a href="index.html"><img class="brand__logo" src="images/brands/it_live.png"
-                    alt="cc global summit 2015 logo">
+            <button id="btnClose" type="button" class="btn btn-icon close hidden" data-target="mobileMenuClose"><i
+                    class="icon-close"></i></button>
+            <ul id="mobileNav" class="nav--mobile hidden">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <a class="nav__brand--link" href="index.html" data-target="brandLogo"><img class="brand__logo"
+                    src="images/brands/it_live.png" alt="cc global summit 2015 logo">
             </a>
-            <button type="button" class="btn btn-icon hidden" data-target="mobileMenu"><i
+            <button id="btnMenu" type="button" class="btn btn-icon" data-target="mobileMenu"><i
                     class="icon-menu"></i></button>
             <ul class="nav-menu">
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -60,8 +66,8 @@
                 <div class="program">
                     <i class="icon icon-exhibition"></i>
                     <h3 class="program__title">Discussion</h3>
-                    <p class="program__body">Appreciate various creations applying CC license of artists, organized from
-                        Art Center Nabi.</p>
+                    <p class="program__body">Have some discussing about the latest technology available and how to use
+                        it.</p>
                 </div>
                 <div class="program">
                     <i class="icon icon-forum"></i>
@@ -76,96 +82,17 @@
                 </div>
                 <div class="program">
                     <i class="icon icon-network"></i>
-                    <h3 class="program__title">CC Ignite</h3>
-                    <p class="program__body">Get opportunities to network with CC affiliates around the world, also
+                    <h3 class="program__title">Networking</h3>
+                    <p class="program__body">Get opportunities to network with affiliates around the Country, also
                         after the summit.</p>
                 </div>
             </div>
-            <button type="button" class="btn btn--text hidden">SEE THE WHOLE PROGRAM</button>
-            <button type="button" class="btn btn--primary">join CC Global Summit 2015</button>
+            <button type="button" class="btn btn--primary">join IT.LIVE Summit</button>
         </section>
 
         <section class="speakers flex column">
             <h2 class="section--title">Featured Speakers</h2>
-            <div class="speakers__group grid">
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Yasser-mimar.jpeg"
-                            alt="Yoachai Benkler Bekman Professor of Enterpreneurial Legol Studies "></div>
-                    <div class="right flex column">
-                        <h3>Yasser Al Mimar</h3>
-                        <p class="speaker__background">President of Iraqi Canadian Chamber of Commerce & Industry
-                            Coming from Canada.
-                        </p>
-                        <p class="speaker__body">Yasser holds High Diploma in Technology and Digital Transformation from
-                            SAIT/Alberta, as
-                            well as an MBA in Leadership
-                            and Digital Organization from University of Cumbria (UK).</p>
-                    </div>
-                </div>
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Saman-Bojan.jpeg" alt=""></div>
-                    <div class="right flex column">
-                        <h3>Saman Bojan</h3>
-                        <p class="speaker__background">Asiacell Telecom representative.</p>
-                        <p class="speaker__body">Saman Bojan has engineering certificate of University of Technology in
-                            Baghdad. He has more than fourteen years of experience in the
-                            field of telecom companies, apart from having took part for many times in regional and
-                            international conferences in
-                            developing mobile communication networks and their legal and regulatory aspects.</p>
-                    </div>
-                </div>
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Safa-Salwan.jpeg" alt=""></div>
-                    <div class="right flex column">
-                        <h3>Safa Salwan</h3>
-                        <p class="speaker__background">Careem Iraq’s Business Development Manager.</p>
-                        <p class="speaker__body">She earned her mini-MBA from Harvard Business School, as well as
-                            Bachelor’s degree in Communications Engineering from
-                            University of Diyala. Safa is the Lead Organizer for Google Developers Groups, Women
-                            Techmakers and the Vice President
-                            of Arab Women In Computing committee.</p>
-                    </div>
-                </div>
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Chadi-Hamouche.jpeg" alt=""></div>
-                    <div class="right flex column">
-                        <h3>Chadi Hamouche</h3>
-                        <p class="speaker__background">Oracle Iraq Territory Manager.</p>
-                        <p class="speaker__body">Chadi Hamouche has more than11 Years of IT industry experience .Chadi
-                            is a holder of Computer and communications
-                            Engineering Degree from the Lebanese American University in Beirut.</p>
-                    </div>
-                </div>
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Yousif-Khalaf.jpeg" alt=""></div>
-                    <div class="right flex column">
-                        <h3>Yousif Khalaf</h3>
-                        <p class="speaker__background">Yousif Al-Dunainawi holds a PhD degree in AI from Brunel
-                            University London.</p>
-                        <p class="speaker__body">He is a former Head of Postgraduate Department in the Ministry of
-                            Higher Education and Scientific Research in Iraq. The
-                            founder of Iraqi Academic Scientific Journals IASJ.net. Now, he is the Head of the Pioneer
-                            Projects Department in the
-                            same Ministry. He runs Iraq Virtual Science Library IVSL.org, through IVSL all Iraqi
-                            Researchers in the Iraq
-                            universities get access the leading global publishers.</p>
-                    </div>
-                </div>
-                <div class="speaker flex">
-                    <div class="left"><img src="images/speakers/Mohammed-hakim.jpeg" alt=""></div>
-                    <div class="right flex column">
-                        <h3>Mohamed Al-Hakim</h3>
-                        <p class="speaker__background">General Manager of Careem Iraq.</p>
-                        <p class="speaker__body">RMohamed Al-Hakim, has more than 10 years of experience in the
-                            financial and IT sectors In addition to founding two local
-                            start-ups – Tamweel Partners and FedShe, one of Iraq’s first e-commerce platforms.worked
-                            with some of the world’s most
-                            elite financial institutions, including Goldman Sachs International in London.he holds a
-                            bachelor’s degree in economics
-                            from University College London, where he was also the Founder and President of the UCL
-                            Economics Conference.</p>
-                    </div>
-                </div>
+            <div id="speakers" class="speakers__group grid">
             </div>
         </section>
 
@@ -190,6 +117,8 @@
             <p>2019 The largest Iraqi forum for information technology in all its disciplines.</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 
