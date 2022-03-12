@@ -25,13 +25,15 @@ attendees and speakers.
 
 ## Desktop Version
 
-![screenshot](./images/screeshots/desktop-home)
-![screenshot](./images/ScreenShots/desktop-about)
+![screenshot](./images/screeshots/desktop-home.png)
+
+![screenshot](./images/screeshots/desktop-about.png)
 
 ## Mobile Version
 
-![screenshot](./images/screeshots/mobile-home)
-![screenshot](./images/ScreenShots/mobile-about)
+![screenshot](./images/screeshots/mobile-home.png)
+
+![screenshot](./images/screeshots/mobile-about.png)
 
 ## Built With &hearts;
 
