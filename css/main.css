@@ -211,7 +211,6 @@ input[type='reset'] {
   font-weight: bold;
   font-size: var(--fs-500);
   line-height: 1.8rem;
-  display: flex;
   align-items: center;
   font-family: var(--ff-ubuntu);
   display: inline-flex;
@@ -323,6 +322,7 @@ input[type='reset'] {
   align-items: center;
   justify-content: flex-end;
   display: none;
+
   --gap: 1.2rem;
 }
 
@@ -362,10 +362,6 @@ nav a[data-target='brandLogo'] {
   width: 100px;
 }
 
-nav a[data-target='brandLogo'] {
-  display: none;
-}
-
 .nav--mobile {
   position: fixed;
   display: flex;
@@ -380,6 +376,10 @@ nav a[data-target='brandLogo'] {
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
+}
+
+.nav--brands li {
+  flex: 0 0 25%;
 }
 
 .nav--mobile li:first-child {
@@ -423,10 +423,6 @@ nav a[data-target='brandLogo'] {
   text-align: center;
   color: var(--clr-text-secondary);
   margin-top: 1.5rem;
-}
-
-.nav--brands li {
-  flex: 0 0 25%;
 }
 
 .nav--brands img {

@@ -4,7 +4,9 @@
   padding: 2rem 1.6rem;
   justify-content: center;
   align-items: center;
+
   --gap: 2rem;
+
   background-image: url(../images/bg-hero.svg);
   background-repeat: no-repeat;
   background-position: center right;
@@ -64,6 +66,7 @@
 
 .about__logo {
   --gap: 0.8rem;
+
   align-items: center;
   padding-bottom: 2rem;
 }
@@ -159,6 +162,7 @@
 
   .partners {
     padding: 3rem 2rem;
+
     --gap: 2rem;
   }
 
@@ -182,10 +186,6 @@
 
   .about {
     padding: 4rem 4em;
-  }
-
-  .about__logo img {
-    max-width: 45%;
   }
 
   .about--peragraph {
@@ -212,6 +212,7 @@
 
   .partners {
     padding: 4rem 4rem;
+
     --gap: 2rem;
   }
 

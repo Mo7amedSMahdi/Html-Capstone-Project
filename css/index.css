@@ -201,6 +201,7 @@
 
   .main__program {
     padding: 3rem 2rem;
+
     --gap: 2rem;
   }
 
@@ -218,6 +219,7 @@
 
   .speakers {
     padding: 3rem 2rem;
+
     --gap: 2rem;
   }
 
@@ -232,6 +234,7 @@
 
   .partners {
     padding: 3rem 2rem;
+
     --gap: 2rem;
   }
 

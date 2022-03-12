@@ -28,10 +28,10 @@ const speakers = [
   },
   {
     id: 4,
-    name: '',
-    image: '',
-    work_background: '',
-    desc: '',
+    name: 'Mohamed Al-Hakim',
+    image: 'images/speakers/Mohammed-hakim.jpeg',
+    work_background: 'General Manager of Careem Iraq.',
+    desc: 'RMohamed Al-Hakim, has more than 10 years of experience in the financial and IT sectors In addition to founding two local start-ups – Tamweel Partners and FedShe, one of Iraq’s first e-commerce platforms.worked with some of the world’s most elite financial institutions, including Goldman Sachs International in London.he holds a bachelor’s degree in economics from University College London, where he was also the Founder and President of the UCL Economics Conference.',
   },
   {
     id: 5,
