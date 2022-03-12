@@ -20,7 +20,7 @@
 
   /* font-families */
   --ff-lato: 'Lato', sans-serif;
-  --ff-ubuntu: 'Ubuntu', sans-serif;
+  --ff-ubuntu: 'COCOGOOSE', sans-serif;
 }
 
 /* RESET */
@@ -259,6 +259,19 @@ input[type='reset'] {
   color: var(--clr-white);
 }
 
+.btn--border {
+  border: 1px solid var(--clr-light);
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  color: var(--clr-dark);
+  width: 100%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -308,6 +321,10 @@ input[type='reset'] {
 
 .icon-cyber {
   content: url(../images/icons/network-monitoring.svg);
+}
+
+.icon-arrow-down {
+  content: url(../images/icons/icn-arrow-down.svg);
 }
 
 .no--scroll {
@@ -457,6 +474,11 @@ nav a[data-target='brandLogo'] {
 }
 
 @media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    padding: 0.3rem 2rem;
+  }
+
   .nav__main {
     padding: 1rem 4rem;
   }
@@ -466,6 +488,10 @@ nav a[data-target='brandLogo'] {
   }
 
   .btn[data-target='mobileMenu'] {
+    display: none;
+  }
+
+  .btn[data-target='mobileMenuClose'] {
     display: none;
   }
 
@@ -479,7 +505,21 @@ nav a[data-target='brandLogo'] {
 }
 
 @media screen and (min-width: 992px) {
+  .header__nav {
+    padding: 0.3rem 3rem;
+  }
+
   .nav__main {
     padding: 1rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header__nav {
+    padding: 0.3rem 13rem;
+  }
+
+  .nav__main {
+    padding: 1rem 13rem;
   }
 }

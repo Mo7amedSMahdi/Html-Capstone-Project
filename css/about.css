@@ -154,6 +154,7 @@
 
   .summit__location {
     font-size: 1rem;
+    top: 74%;
   }
 
   .section--title {
@@ -161,21 +162,20 @@
   }
 
   .partners {
-    padding: 3rem 2rem;
-
-    --gap: 2rem;
-  }
-
-  .nav--brands li {
-    flex: 0 0 20%;
+    display: none;
   }
 
   .footer {
     padding: 3rem 2rem;
+    background-color: var(--clr-dark);
   }
 
   .footer__group img {
     max-width: 50%;
+  }
+
+  .footer__group p {
+    color: var(--clr-light);
   }
 }
 

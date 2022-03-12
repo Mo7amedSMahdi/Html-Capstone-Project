@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="246px" height="245px" viewBox="0 0 246 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-283.000000, -1988.000000)">
+            <g id="Group-2" transform="translate(283.716468, 1988.216468)">
+                <rect id="Rectangle" x="30.2835316" y="38.7835316" width="184.813333" height="166"></rect>
+                <g id="Group" transform="translate(122.237590, 122.237590) rotate(45.000000) translate(-122.237590, -122.237590) translate(35.802561, 35.802561)" fill="#000" opacity="0.1">
+                    <rect id="Rectangle" transform="translate(30.500000, 86.435029) rotate(90.000000) translate(-30.500000, -86.435029) " x="18.5" y="55.9350288" width="24" height="61" rx="4"></rect>
+                    <rect id="Rectangle-Copy" transform="translate(142.370058, 86.435029) rotate(90.000000) translate(-142.370058, -86.435029) " x="130.370058" y="55.9350288" width="24" height="61" rx="4"></rect>
+                    <rect id="Rectangle-Copy-2" x="74.4350288" y="111.870058" width="24" height="61" rx="4"></rect>
+                    <rect id="Rectangle-Copy-3" x="74.4350288" y="-4.84603683e-14" width="24" height="61" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

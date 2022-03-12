@@ -12,13 +12,12 @@
   font-style: normal;
   font-weight: 300;
   font-size: var(--fs-400);
-  line-height: 1.4rem;
   color: var(--clr-red);
 }
 
 .intro__title h1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: var(--fs-600);
   line-height: 2rem;
   color: var(--clr-red);
@@ -39,7 +38,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: var(--fs-400);
-  font-family: var(--ff-ubuntu);
+  font-family: var(--ff-lato);
   line-height: 2rem;
   color: var(--clr-dark);
 }
@@ -60,6 +59,11 @@
   padding: 2rem 1rem;
 
   --gap: 1.5rem;
+
+  background-image: url(../images/cross.svg);
+  background-repeat: repeat;
+  background-size: 37px;
+  background-position: center center;
 }
 
 .main__program h2 {
@@ -71,6 +75,12 @@
   line-height: 4rem;
 }
 
+.main__program button[data-target='desktop'] {
+  color: var(--clr-light);
+  text-decoration: underline;
+  display: none;
+}
+
 .program__group {
   flex-direction: column;
 
@@ -78,13 +88,16 @@
 }
 
 .program {
-  background-color: #3c3f46;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem;
-  background-image: url(../images/cross_1.svg);
+}
+
+.program:hover {
+  border: 1px solid #d3d3d3;
 }
 
 .program__title {
@@ -172,13 +185,17 @@
   color: var(--clr-dark);
 }
 
+.btn--border i {
+  margin-left: 0.8rem;
+}
+
 @media screen and (min-width: 775px) {
-  .header__nav {
-    padding: 0.3rem 2rem;
+  .hero {
+    padding: 4rem 4rem;
   }
 
-  .hero {
-    padding: 4rem 3rem;
+  #see-more {
+    display: none;
   }
 
   .intro__title p {
@@ -203,6 +220,14 @@
     padding: 3rem 2rem;
 
     --gap: 2rem;
+  }
+
+  .main__program button[data-target='desktop'] {
+    display: inline-flex;
+  }
+
+  .main__program button[data-target='mobile'] {
+    display: none;
   }
 
   .program__group {
@@ -252,14 +277,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .header__nav {
-    padding: 0.3rem 3rem;
-  }
-
-  .nav__main {
-    padding: 1rem 3rem;
-  }
-
   .hero {
     padding: 4rem 3rem;
   }
@@ -298,12 +315,8 @@
 }
 
 @media screen and (min-width: 1100px) {
-  .nav__main {
-    padding: 1rem 13rem;
-  }
-
   .hero {
-    padding: 6rem 8rem;
+    padding: 6rem 13rem;
   }
 
   .main__program {

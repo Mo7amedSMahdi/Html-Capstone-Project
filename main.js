@@ -2,7 +2,8 @@ const btnClose = document.getElementById('btnClose');
 const btnMenu = document.getElementById('btnMenu');
 const mobileNav = document.getElementById('mobileNav');
 const speakersContainer = document.getElementById('speakers');
-
+const btnSeeMore = document.getElementById('see-more');
+let i;
 const speakers = [
   {
     id: 1,
@@ -63,8 +64,10 @@ btnClose.addEventListener('click', () => {
 });
 
 function LoadSpeakers() {
-  speakers.forEach((speaker) => {
-    speakersContainer.innerHTML += `<div class="speaker flex">
+  speakersContainer.innerHTML = '';
+  if (window.screen.width >= 775) {
+    speakers.forEach((speaker) => {
+      speakersContainer.innerHTML += `<div class="speaker flex">
                     <div class="left"><img src="${speaker.image}" alt="${speaker.name}"></div>
                     <div class="right flex column">
                         <h3>${speaker.name}</h3>
@@ -72,7 +75,32 @@ function LoadSpeakers() {
                         <p class="speaker__body">${speaker.desc}</p>
                     </div>
                 </div>`;
-  });
+    });
+  } else {
+    for (i = 0; i < 2; i += 1) {
+      speakersContainer.innerHTML += `<div class="speaker flex">
+                    <div class="left"><img src="${speakers[i].image}" alt="${speakers[i].name}"></div>
+                    <div class="right flex column">
+                        <h3>${speakers[i].name}</h3>
+                        <p class="speaker__background">${speakers[i].work_background}</p>
+                        <p class="speaker__body">${speakers[i].desc}</p>
+                    </div>
+                </div>`;
+    }
+  }
 }
-
+btnSeeMore.addEventListener('click', () => {
+  while (i < 6) {
+    speakersContainer.innerHTML += `<div class="speaker flex">
+                    <div class="left"><img src="${speakers[i].image}" alt="${speakers[i].name}"></div>
+                    <div class="right flex column">
+                        <h3>${speakers[i].name}</h3>
+                        <p class="speaker__background">${speakers[i].work_background}</p>
+                        <p class="speaker__body">${speakers[i].desc}</p>
+                    </div>
+                </div>`;
+    i += 1;
+    btnSeeMore.classList.add('hidden');
+  }
+});
 document.addEventListener('DOMContentLoaded', LoadSpeakers, false);
