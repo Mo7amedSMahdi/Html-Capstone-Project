@@ -473,7 +473,7 @@ nav a[data-target='brandLogo'] {
   color: var(--clr-dark);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 775px) {
   .header__nav {
     display: flex;
     padding: 0.3rem 2rem;
@@ -502,6 +502,14 @@ nav a[data-target='brandLogo'] {
   nav a[data-target='brandLogo'] {
     display: inline-flex;
   }
+
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer__group img {
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -512,6 +520,14 @@ nav a[data-target='brandLogo'] {
   .nav__main {
     padding: 1rem 6rem;
   }
+
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .footer__group img {
+    max-width: 30%;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -521,5 +537,9 @@ nav a[data-target='brandLogo'] {
 
   .nav__main {
     padding: 1rem 13rem;
+  }
+
+  .footer {
+    padding: 6rem 13rem;
   }
 }
