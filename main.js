@@ -59,6 +59,17 @@ btnMenu.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
 });
 
+btnClose.addEventListener('click', () => {
+  mobileNavMenu.classList.add('animate--hide');
+  setTimeout(() => {
+    mobileNavMenu.classList.toggle('animate--show');
+    mobileNav.classList.toggle('hidden');
+    btnClose.classList.toggle('hidden');
+    document.body.style.overflow = 'auto';
+    mobileNavMenu.classList.remove('animate--hide');
+  }, 300);
+});
+
 function LoadSpeakers() {
   speakersContainer.innerHTML = '';
   if (window.screen.width >= 775) {

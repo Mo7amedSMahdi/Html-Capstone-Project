@@ -173,6 +173,10 @@
   .footer__group p {
     color: var(--clr-light);
   }
+
+  .footer__group img {
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -215,6 +219,14 @@
   .nav--brands li {
     flex: 0 0 10%;
   }
+
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .footer__group img {
+    max-width: 30%;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -224,5 +236,9 @@
 
   .about {
     padding: 6rem 8rem;
+  }
+
+  .footer {
+    padding: 6rem 13rem;
   }
 }
