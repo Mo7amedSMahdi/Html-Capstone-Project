@@ -23,13 +23,15 @@
                 <button type="button" class="btn btn-text">Logout</button>
             </div>
         </div>
-        <nav class="nav__main flex">
+        <div id="mobileNav" class="hidden">
             <button id="btnClose" type="button" class="btn btn-icon close hidden" data-target="mobileMenuClose"><i
                     class="icon-close"></i></button>
-            <ul id="mobileNav" class="nav--mobile hidden">
+            <ul id="mobileNavMenu" class="nav--mobile">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
+        </div>
+        <nav class="nav__main flex">
             <a class="nav__brand--link" href="index.html" data-target="brandLogo"><img class="brand__logo"
                     src="images/brands/it_live.png" alt="cc global summit 2015 logo">
             </a>

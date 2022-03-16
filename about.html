@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT.LIVE iraq 2019 | About</title>
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/about.css" />
 </head>
@@ -21,13 +22,15 @@
                 <button type="button" class="btn btn-text">Logout</button>
             </div>
         </div>
-        <nav class="nav__main flex">
+        <div id="mobileNav" class="hidden">
             <button id="btnClose" type="button" class="btn btn-icon close hidden" data-target="mobileMenuClose"><i
                     class="icon-close"></i></button>
-            <ul id="mobileNav" class="nav--mobile hidden">
+            <ul id="mobileNavMenu" class="nav--mobile">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
             </ul>
+        </div>
+        <nav class="nav__main flex">
             <a class="nav__brand--link" href="index.html" data-target="brandLogo"><img class="brand__logo"
                     src="images/brands/it_live.png" alt="cc global summit 2015 logo">
             </a>
@@ -44,7 +47,7 @@
         <section class="page__header flex column">
             <div class="header__title">
                 <p class="section--peragraph">"Like Never Before"</p>
-                <h1 class="section--title">IT.LIVE IRAQ TECH SUMMIT 2019</h1>
+                <h1 class="section--title">IT.LIVE IRAQ TECH SUMMIT</h1>
             </div>
         </section>
         <section class="about flex column">

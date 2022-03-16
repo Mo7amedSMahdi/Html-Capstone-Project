@@ -66,6 +66,9 @@ ol {
 }
 
 /* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
 
 html:focus-within {
   scroll-behavior: smooth;
@@ -395,6 +398,16 @@ nav a[data-target='brandLogo'] {
   backdrop-filter: blur(10px);
 }
 
+.animate--show {
+  animation-duration: 0.4s;
+  animation-name: slidein;
+}
+
+.animate--hide {
+  animation-duration: 0.3s;
+  animation-name: slideout;
+}
+
 .nav--brands li {
   flex: 0 0 25%;
 }
@@ -541,5 +554,25 @@ nav a[data-target='brandLogo'] {
 
   .footer {
     padding: 6rem 13rem;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
   }
 }

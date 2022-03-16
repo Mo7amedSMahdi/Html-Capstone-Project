@@ -22,7 +22,7 @@
   line-height: 2rem;
   color: var(--clr-red);
   font-family: var(--ff-ubuntu);
-  background-image: url(../images/bg_text.svg);
+  background-image: url(../images/red-bg.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
