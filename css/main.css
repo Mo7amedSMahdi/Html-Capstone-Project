@@ -263,9 +263,8 @@ input[type='reset'] {
 }
 
 .btn--border {
-  border: 1px solid var(--clr-light);
-  border-radius: 0.3rem;
-  padding: 0.2rem 0.2rem;
+  border: 3px solid var(--clr-red);
+  padding: 0.2rem 1rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -375,27 +374,38 @@ nav a[data-target='brandLogo'] {
 .nav-menu {
   display: none;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
+}
+
+.menu--button {
+  margin-left: 4rem;
 }
 
 .brand__logo {
   width: 100px;
 }
 
-.nav--mobile {
-  position: fixed;
+.mobile__nav__container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  position: fixed;
+  align-items: flex-start;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 4rem 4rem;
+  padding: 10rem 4rem;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
+}
+
+.nav--mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .animate--show {

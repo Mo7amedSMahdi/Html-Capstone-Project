@@ -1,7 +1,6 @@
 const btnClose = document.getElementById('btnClose');
 const btnMenu = document.getElementById('btnMenu');
 const mobileNav = document.getElementById('mobileNav');
-const mobileNavMenu = document.getElementById('mobileNavMenu');
 const speakersContainer = document.getElementById('speakers');
 const btnSeeMore = document.getElementById('see-more');
 let i;
@@ -53,21 +52,19 @@ const speakers = [
 ];
 
 btnMenu.addEventListener('click', () => {
-  mobileNavMenu.classList.toggle('animate--show');
+  mobileNav.classList.toggle('animate--show');
   mobileNav.classList.toggle('hidden');
-  btnClose.classList.toggle('hidden');
   document.body.style.overflow = 'hidden';
 });
 
 btnClose.addEventListener('click', () => {
-  mobileNavMenu.classList.add('animate--hide');
+  mobileNav.classList.add('animate--hide');
   setTimeout(() => {
-    mobileNavMenu.classList.toggle('animate--show');
+    mobileNav.classList.toggle('animate--show');
     mobileNav.classList.toggle('hidden');
-    btnClose.classList.toggle('hidden');
     document.body.style.overflow = 'auto';
-    mobileNavMenu.classList.remove('animate--hide');
-  }, 300);
+    mobileNav.classList.remove('animate--hide');
+  }, 200);
 });
 
 function LoadSpeakers() {
