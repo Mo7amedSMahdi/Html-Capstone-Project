@@ -2,7 +2,7 @@
 
 # Mohammed Salah Personal Portfolio
 
-This is a web site for the IT Live Summit for 2019.
+This is a website for IT.Live Summit for 2019.
 
 # Who is IT.LIVE
 
